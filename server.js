@@ -24,7 +24,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 
 
 // listen (start app with node server.js) ======================================
-app.listen(80);
+app.listen(3000);
 console.log("App listening on port 80");
 
 var transport = nodemailer.createTransport({
@@ -46,7 +46,7 @@ app.post('/api/sendMail', function(req, res) {
         html: "<b>Hello,</b><p><strong>Name: </strong>" + req.body.name + "</p><p><strong>Email: </strong>" + req.body.email + "</p><p><strong>Phone: </strong>" + req.body.phone + "</p><p><strong>Message: </strong>" + req.body.message + "</p>",
         createTextFromHtml: true,
         from: "<stormcloudtechno@gmail.com>",
-        to: "<stormcloudtechno@gmail.com>",
+        to: "<siddharthmane89@gmail.com>",
         subject: "Message from website"
       };
       transport.sendMail(msg, function (err) {
