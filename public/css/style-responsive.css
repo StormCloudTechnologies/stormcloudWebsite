@@ -1,21 +1,24 @@
-@media only screen and (min-width:480px) and (max-width:767px){#portfolio-wrapper{width:480px;margin:0 auto}.grid-wrapper .portfolio-item{width:50%}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item{width:48%}ul#filters li{margin:0 5px 15px 0;float:left}#home .section-title h1{font-size:32px}.section-title h1{font-size:45px;line-height:1.2}.new-line{margin-top:40px}.sec_content_full,.sec_title_content{padding:60px 15px}.small-width{width:90%}#map_canvas{height:250px}.div-align-middle p{margin:10px 0;font-size:15px}.subHead{font-size:26px!important;line-height:24px}.ultralarge{font-size:60px;letter-spacing:0}ul.education li{float:none;width:100%}.item_top
-{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}
-.item_bottom{bottom:0;opacity:1}.item_fade_in{opacity:1;right:0}}
 
-
-
-@media only screen and (min-width:320px) and (max-width:479px){#portfolio-wrapper{width:320px;margin:0 auto}.grid-wrapper .portfolio-item{width:50%}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item{width:48%}ul#filters li{margin:0 5px 15px 0;float:left}#home .section-title h1{font-size:25px}.section-title h1{font-size:35px;line-height:1.2}.new-line{margin-top:40px}.sec_content_full,.sec_title_content{padding:60px 15px}.small-width{width:90%}#map_canvas{height:250px}.div-align-middle p{margin:10px 0;font-size:15px}.subHead{font-size:26px!important;line-height:24px}.ultralarge{font-size:40px;letter-spacing:0}ul.education li{float:none;width:100%}.item_top
-{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}
-.item_bottom{bottom:0;opacity:1}.item_fade_in{opacity:1;right:0}.nav-inner .logo a img {max-height: 30px;}.portfolio li{margin:0px;}.first-nav.white-nav .nav-menu, .trans-nav .nav-menu ul li a, .trans-nav.white-nav .nav-menu {
+@media only screen and (min-width:480px) and (max-width:767px){#portfolio-wrapper{width:480px;margin:0 auto}.grid-wrapper .portfolio-item{width:50%}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item{width:48%}ul#filters li{margin:0 5px 15px 0;float:left}#home .section-title h1{font-size:32px}.section-title h1{font-size:45px;line-height:1.2}.new-line{margin-top:40px}.sec_content_full,.sec_title_content{padding:60px 15px}.small-width{width:90%}#map_canvas{height:250px}.div-align-middle p{margin:10px 0;font-size:15px}.subHead{font-size:26px!important;line-height:24px}.ultralarge{font-size:60px;letter-spacing:0}ul.education li{float:none;width:100%}.nav-inner .logo a img {max-height: 30px;}.portfolio li{margin:0px;}.item_top
+	{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}.first-nav.white-nav .nav-menu, .trans-nav .nav-menu ul li a, .trans-nav.white-nav .nav-menu {
     color: #333;
-}}
+}
+}
+
+
+@media only screen and (min-width:320px) and (max-width:479px){#portfolio-wrapper{width:320px;margin:0 auto}.grid-wrapper .portfolio-item{width:50%}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item{width:48%}ul#filters li{margin:0 5px 15px 0;float:left}#home .section-title h1{font-size:25px}.section-title h1{font-size:35px;line-height:1.2}.new-line{margin-top:40px}.sec_content_full,.sec_title_content{padding:60px 15px}.small-width{width:90%}#map_canvas{height:250px}.div-align-middle p{margin:10px 0;font-size:15px}.subHead{font-size:26px!important;line-height:24px}.ultralarge{font-size:40px;letter-spacing:0}ul.education li{float:none;width:100%}ul.timeline li .date span{display:inline}ul.education div.dates{width:80px}ul.education div.content{margin-left:90px}ul.timeline{margin:40px 0 0;border:none}ul.timeline .circle{display:none}ul.timeline li .date{width:100%}ul.timeline .data{margin:0!important;padding-top:30px!important}ul.timeline li .data:after,ul.timeline li .data:hover:after{border-width:0}ul.timeline .date{margin-left:0!important}.first-nav.white-nav .nav-menu, .trans-nav .nav-menu ul li a, .trans-nav.white-nav .nav-menu {
+    color: #333;
+}.nav-inner .logo a img {max-height: 30px;}.portfolio li{margin:0px;}.item_top
+{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}
+}
 
 @media only screen and (min-width:360px) and (max-width:479px){#portfolio-wrapper{width:360px;margin:0 auto}}
 
 
 @media only screen and (max-width:319px){.div-align-middle p{margin:10px 0;font-size:14px}ul.education li{float:none;width:100%}ul.education div.dates{width:80px}ul.education div.content{margin-left:90px}ul.timeline{margin:0;border:none}ul.timeline .circle{display:none}ul.timeline li .date{width:100%}ul.timeline .data{margin:0!important;padding-top:65px!important}ul.timeline .date{margin-left:0!important}.parallax{background-attachment:fixed!important;background-position:center top!important}.subHead{font-size:24px!important;line-height:22px}.ultralarge{font-size:50px;letter-spacing:0}.small-width{width:99%}#portfolio-wrapper{width:240px;margin:0 auto}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item,.grid-wrapper .portfolio-item{width:100%}.sec_content_full,.sec_title_content{padding:50px 15px}.header .heading{font-size:20px;letter-spacing:0}.header .box-heading{font-size:44px}.item_top
-{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}
-.item_bottom{bottom:0;opacity:1}.item_fade_in{opacity:1;right:0}}
+{top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}.first-nav.white-nav .nav-menu, .trans-nav .nav-menu ul li a, .trans-nav.white-nav .nav-menu {
+    color: #333;
+}}
 
 
 
@@ -38,3 +41,5 @@
 
 
 @media only screen and (max-width:960px){.nav-tabs>li{border-bottom:1px solid #fff;float:none;margin-bottom:0;width:100%}.tabs2.nav-tabs li,.tabs4.nav-tabs li{display:block;float:none;text-align:center;width:100%}.tabs-left>.nav-tabs,.tabs-right>.nav-tabs{border-right:0 solid transparent;border-left:0 solid transparent;width:100%}.tabs-left>.nav-tabs>li>a,.tabs-right>.nav-tabs>li>a{background-color:#EEE;border-radius:4px;-webkit-border-radius:4px;margin:0}.tabs-left>.nav-tabs .active>a,.tabs-left>.nav-tabs .active>a:focus,.tabs-left>.nav-tabs .active>a:hover,.tabs-right>.nav-tabs .active>a,.tabs-right>.nav-tabs .active>a:focus,.tabs-right>.nav-tabs .active>a:hover{border-color:#1ABC9C #eee #eee;border-style:solid;border-width:3px 1px 1px;background-color:#fff;border-radius:4px;-webkit-border-radius:4px}}@media (min-width:1024px){#portfolio-wrapper{width:100%;margin:0 auto}.nav-inner div.nav-menu{display:block!important}}
+
+
