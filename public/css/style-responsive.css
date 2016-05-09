@@ -6,7 +6,9 @@
 
 @media only screen and (min-width:320px) and (max-width:479px){#portfolio-wrapper{width:320px;margin:0 auto}.grid-wrapper .portfolio-item{width:50%}#gallery-wrapper.column-2 .gallery-item,#gallery-wrapper.column-3 .gallery-item{width:48%}ul#filters li{margin:0 5px 15px 0;float:left}#home .section-title h1{font-size:25px}.section-title h1{font-size:35px;line-height:1.2}.new-line{margin-top:40px}.sec_content_full,.sec_title_content{padding:60px 15px}.small-width{width:90%}#map_canvas{height:250px}.div-align-middle p{margin:10px 0;font-size:15px}.subHead{font-size:26px!important;line-height:24px}.ultralarge{font-size:40px;letter-spacing:0}ul.education li{float:none;width:100%}.item_top
 {top:0;opacity:1}.item_left{left:0;opacity:1}.item_right{right:0;opacity:1}
-.item_bottom{bottom:0;opacity:1}.item_fade_in{opacity:1;right:0}.nav-inner .logo a img {max-height: 30px;}.portfolio li{margin:0px;}}
+.item_bottom{bottom:0;opacity:1}.item_fade_in{opacity:1;right:0}.nav-inner .logo a img {max-height: 30px;}.portfolio li{margin:0px;}.first-nav.white-nav .nav-menu, .trans-nav .nav-menu ul li a, .trans-nav.white-nav .nav-menu {
+    color: #333;
+}}
 
 @media only screen and (min-width:360px) and (max-width:479px){#portfolio-wrapper{width:360px;margin:0 auto}}
 
