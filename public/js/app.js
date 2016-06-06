@@ -11,6 +11,10 @@ angular.module('AppModule', [])
                 data: mail
             }).then(function(resp) {
                 $scope.successMessage = resp.data.message;
+                $scope.mail.name = '';
+                $scope.mail.email = '';
+                $scope.mail.phone = '';
+                $scope.mail.message = '';
                },function(resp) {
                   // This block execute in case of error.
             });
