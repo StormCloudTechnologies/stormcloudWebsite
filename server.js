@@ -47,7 +47,7 @@ app.post('/api/sendMail', function(req, res) {
         createTextFromHtml: true,
         from: "<stormcloudtechno@gmail.com>",
         to: "<siddharthmane89@gmail.com>",
-        subject: "Message from website"
+        subject: "Message from StormCloud website"
       };
       transport.sendMail(msg, function (err) {
         if (err) {
