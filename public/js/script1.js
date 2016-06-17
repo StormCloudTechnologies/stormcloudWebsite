@@ -94,43 +94,47 @@ $(window).load(function() {
     // $("#mask").delay(0.5e3).fadeOut("fast")
 });
 $(document).ready(function() {
+    $("html, body").stop().animate({
+        scrollTop: 0
+    }, 0, "easeInOutExpo")
+
     $(".item_top").each(function() {
         $(this).appear(function() {
-            $(this).delay(10).animate({
+            $(this).delay(0).animate({
                 opacity: 1,
                 top: "0px"
-            }, 0.5e3)
+            }, 0)
         })
     });
     $(".item_bottom").each(function() {
         $(this).appear(function() {
-            $(this).delay(10).animate({
+            $(this).delay(0).animate({
                 opacity: 1,
                 bottom: "0px"
-            }, 0.5e3)
+            }, 0)
         })
     });
     $(".item_left").each(function() {
         $(this).appear(function() {
-            $(this).delay(10).animate({
+            $(this).delay(0).animate({
                 opacity: 1,
                 left: "0px"
-            }, 0.5e3)
+            }, 0)
         })
     });
     $(".item_right").each(function() {
         $(this).appear(function() {
-            $(this).delay(10).animate({
+            $(this).delay(0).animate({
                 opacity: 1,
                 right: "0px"
-            }, 0.5e3)
+            }, 0)
         })
     });
     $(".item_fade_in").each(function() {
         $(this).appear(function() {
-            $(this).delay(10).animate({
+            $(this).delay(0).animate({
                 opacity: 1
-            }, 500)
+            }, 0)
         })
     });
     if ($(".fullScreen").length) {
