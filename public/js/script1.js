@@ -562,7 +562,7 @@ $(window).load(function() {
 $("a[rel^='prettyPhoto']").prettyPhoto({
     animation_speed: "normal",
     theme: "facebook",
-    slideshow: 4e3,
+    slideshow: 1e3,
     autoplay_slideshow: !1,
     deeplinking: false
 });
@@ -762,7 +762,7 @@ $(window).load(function() {
     e.isotope({
         animationEngine: "best-available",
         animationOptions: {
-            duration: 200,
+            duration: 100,
             queue: false
         },
         layoutMode: "fitRows"
@@ -771,7 +771,7 @@ $(window).load(function() {
     t.isotope({
         animationEngine: "best-available",
         animationOptions: {
-            duration: 200,
+            duration: 100,
             queue: false
         },
         layoutMode: "fitRows"

@@ -18,7 +18,7 @@
     $(".js_rotating").Morphext({
 	    animation: "fadeIn",
 	    separator: ",",
-	    speed: 3500,
+	    speed: 1500,
 	    complete: function () {
 	    }
 	});
