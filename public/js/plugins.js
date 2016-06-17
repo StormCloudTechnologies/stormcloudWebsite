@@ -152,7 +152,7 @@ http://www.gnu.org/licenses/gpl.html
           return callback(false);
         }
       }
-      http.send();
+      // http.send();
     }
   }
 

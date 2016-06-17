@@ -87,13 +87,13 @@ var isMobile = {
 };
 if (isMobile.any()) onMobile = true;
 $(window).load(function() {
-    $(".intro-loader").delay(1e3).fadeOut("slow");
-    $("#mask").delay(1e3).fadeOut("slow")
+    $(".intro-loader").delay(0e3).fadeOut("slow");
+    $("#mask").delay(0e3).fadeOut("slow")
 });
 $(document).ready(function() {
     $(".item_top").each(function() {
         $(this).appear(function() {
-            $(this).delay(500).animate({
+            $(this).delay(200).animate({
                 opacity: 1,
                 top: "0px"
             }, 1e3)
@@ -101,7 +101,7 @@ $(document).ready(function() {
     });
     $(".item_bottom").each(function() {
         $(this).appear(function() {
-            $(this).delay(500).animate({
+            $(this).delay(200).animate({
                 opacity: 1,
                 bottom: "0px"
             }, 1e3)
@@ -109,7 +109,7 @@ $(document).ready(function() {
     });
     $(".item_left").each(function() {
         $(this).appear(function() {
-            $(this).delay(500).animate({
+            $(this).delay(200).animate({
                 opacity: 1,
                 left: "0px"
             }, 1e3)
@@ -117,7 +117,7 @@ $(document).ready(function() {
     });
     $(".item_right").each(function() {
         $(this).appear(function() {
-            $(this).delay(500).animate({
+            $(this).delay(200).animate({
                 opacity: 1,
                 right: "0px"
             }, 1e3)
@@ -125,9 +125,9 @@ $(document).ready(function() {
     });
     $(".item_fade_in").each(function() {
         $(this).appear(function() {
-            $(this).delay(800).animate({
+            $(this).delay(100).animate({
                 opacity: 1
-            }, 2500)
+            }, 400)
         })
     });
     if ($(".fullScreen").length) {
@@ -161,7 +161,7 @@ $(document).ready(function() {
                     barColor: "#1ABC9C",
                     size: "200",
                     lineWidth: 20,
-                    animate: 2e3,
+                    animate: 1e3,
                     onStep: function(e, t, n) {
                         $(this.el).find(".percent").text(Math.round(n))
                     }
@@ -176,11 +176,11 @@ $(document).ready(function() {
                     $(this).animate({
                         opacity: 1,
                         left: "0px"
-                    }, 2e3);
+                    }, 1e3);
                     var e = $(this).find("span").attr("data-width");
                     $(this).find("span").animate({
                         width: e + "%"
-                    }, 2200, "easeOutBounce")
+                    }, 800, "easeOutBounce")
                 })
             })
         }
@@ -201,13 +201,13 @@ $(document).ready(function() {
                 t.html("Sending....")
             },
             success: function(t) {
-                e.fadeOut(300);
-                n.html(t).fadeIn(1e3);
+                e.fadeOut(200);
+                n.html(t).fadeIn(0e3);
                 setTimeout(function() {
-                    n.html(t).fadeOut(300);
+                    n.html(t).fadeOut(200);
                     $("#name, #email,#phone, #message").val("");
-                    e.fadeIn(1800)
-                }, 4e3)
+                    e.fadeIn(1000)
+                },2e3)
             },
             error: function(e) {
                 console.log(e)
@@ -224,7 +224,7 @@ $(document).ready(function() {
     $("#back-top").click(function() {
         $("html, body").stop().animate({
             scrollTop: 0
-        }, 1500, "easeInOutExpo")
+        }, 800, "easeInOutExpo")
     });
     $("[rel='tooltip']").tooltip();
     $(".tip-top").tooltip({
@@ -241,16 +241,16 @@ $(document).ready(function() {
     })
 });
 $(".nav-toggle").hover(function() {
-    $(this).find(".dropdown-menu").first().stop(true, true).fadeIn(450)
+    $(this).find(".dropdown-menu").first().stop(true, true).fadeIn(250)
 }, function() {
-    $(this).find(".dropdown-menu").first().stop(true, true).fadeOut(450)
+    $(this).find(".dropdown-menu").first().stop(true, true).fadeOut(250)
 });
 $(".scroll").bind("click", function(e) {
     var t = $(this);
     var n = $("#navigation, #navigation-sticky").outerHeight();
     $("html, body").stop().animate({
         scrollTop: $(t.attr("href")).offset().top - n + "px"
-    }, 1200, "easeInOutExpo");
+    }, 600, "easeInOutExpo");
     e.preventDefault()
 });
 if ($(".headerWrapper").length) {
@@ -598,13 +598,13 @@ $(function() {
                 if (n) e.play();
                 else e.pause();
                 e.addEventListener("play", function(e) {
-                    $(i).fadeOut(300)
+                    $(i).fadeOut(200)
                 }, false);
                 e.addEventListener("pause", function(e) {
-                    $(i).fadeIn(300)
+                    $(i).fadeIn(200)
                 }, false);
                 e.addEventListener("ended", function(e) {
-                    $(i).fadeIn(300)
+                    $(i).fadeIn(200)
                 }, false)
             }
         };
@@ -837,7 +837,7 @@ $(window).load(function() {
                 var e = $(this).find(".open-project").attr("href") + " .item-data";
                 $("#project-page-data").animate({
                     opacity: 0
-                }, 400, function() {
+                }, 200, function() {
                     $("#project-page-data").load(e, function(e) {
                         var t = $(".helper");
                         var n = t.height();
@@ -846,9 +846,9 @@ $(window).load(function() {
                             height: ""
                         })
                     });
-                    $("#project-page-data").delay(400).animate({
+                    $("#project-page-data").delay(200).animate({
                         opacity: 1
-                    }, 400)
+                    }, 200)
                 });
                 $("html, body").animate({
                     scrollTop: $(".portfolio-bottom").offset().top - 40
@@ -874,12 +874,12 @@ $(window).load(function() {
         $(document).on("click", "#project_close", function(e) {
             $("#project-page-data").animate({
                 opacity: 0
-            }, 400, function() {
+            }, 200, function() {
                 $("#project-page-holder").delay(400).slideUp(400)
             });
             $("html, body").delay(1e3).animate({
                 scrollTop: $(".portfolio-top").offset().top - 70
-            }, 800);
+            },400);
             t.removeClass("active");
             return false
         })

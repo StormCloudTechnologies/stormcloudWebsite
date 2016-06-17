@@ -53,7 +53,7 @@
     //when you click the scroll to top button, go to the top of the page
     $(".scroll_to_top").on("click", function(e){
 		e.preventDefault();
-		$("html, body").animate({scrollTop:0}, 800);
+		$("html, body").animate({scrollTop:0}, 500);
     });
 
     //init functions
@@ -277,7 +277,7 @@
 
 		var section = $(this).attr("data-section-id");
 
-		$('html, body').animate({scrollTop:$('#' + section).offset().top-50}, 750);
+		$('html, body').animate({scrollTop:$('#' + section).offset().top-50}, 250);
 		
 		return false;
 
@@ -395,7 +395,7 @@
 
 		    	$(this).find(".barinner").animate({
 				    width:percentage
-				}, 700);
+				}, 300);
 				$(this).addClass("animated");
 		    }
 
@@ -487,13 +487,13 @@
 		if (box.hasClass("hidden")){
 			box.animate({
 				"left" : "0"
-			}, 300);
+			}, 200);
 			box.removeClass("hidden");
 			$(this).removeClass("fa-angle-right").addClass("fa-angle-left");
 		}else{
 			box.animate({
 				"left" : "-158px"
-			}, 300);
+			}, 200);
 			box.addClass("hidden");
 			$(this).removeClass("fa-angle-left").addClass("fa-angle-right");
 		}
