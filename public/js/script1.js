@@ -96,7 +96,7 @@ $(document).ready(function() {
             $(this).delay(100).animate({
                 opacity: 1,
                 top: "0px"
-            }, 1e3)
+            }, 0e3)
         })
     });
     $(".item_bottom").each(function() {
@@ -104,7 +104,7 @@ $(document).ready(function() {
             $(this).delay(100).animate({
                 opacity: 1,
                 bottom: "0px"
-            }, 1e3)
+            }, 0e3)
         })
     });
     $(".item_left").each(function() {
@@ -112,7 +112,7 @@ $(document).ready(function() {
             $(this).delay(100).animate({
                 opacity: 1,
                 left: "0px"
-            }, 1e3)
+            }, 0e3)
         })
     });
     $(".item_right").each(function() {
@@ -120,14 +120,14 @@ $(document).ready(function() {
             $(this).delay(100).animate({
                 opacity: 1,
                 right: "0px"
-            }, 1e3)
+            }, 0e3)
         })
     });
     $(".item_fade_in").each(function() {
         $(this).appear(function() {
-            $(this).delay(200).animate({
+            $(this).delay(10).animate({
                 opacity: 1
-            }, 1000)
+            }, 100)
         })
     });
     if ($(".fullScreen").length) {
@@ -161,7 +161,7 @@ $(document).ready(function() {
                     barColor: "#1ABC9C",
                     size: "200",
                     lineWidth: 20,
-                    animate: 1e3,
+                    animate: 0e3,
                     onStep: function(e, t, n) {
                         $(this.el).find(".percent").text(Math.round(n))
                     }
@@ -176,11 +176,11 @@ $(document).ready(function() {
                     $(this).animate({
                         opacity: 1,
                         left: "0px"
-                    }, 1e3);
+                    }, 0e3);
                     var e = $(this).find("span").attr("data-width");
                     $(this).find("span").animate({
                         width: e + "%"
-                    }, 2200, "easeOutBounce")
+                    }, 200, "easeOutBounce")
                 })
             })
         }
@@ -201,13 +201,13 @@ $(document).ready(function() {
                 t.html("Sending....")
             },
             success: function(t) {
-                e.fadeOut(300);
-                n.html(t).fadeIn(1e3);
+                e.fadeOut(200);
+                n.html(t).fadeIn(0e3);
                 setTimeout(function() {
-                    n.html(t).fadeOut(300);
+                    n.html(t).fadeOut(200);
                     $("#name, #email,#phone, #message").val("");
-                    e.fadeIn(1200)
-                }, 4e3)
+                    e.fadeIn(1000)
+                },2e3)
             },
             error: function(e) {
                 console.log(e)
@@ -216,15 +216,15 @@ $(document).ready(function() {
     });
     $(window).scroll(function() {
         if ($(window).scrollTop() > 400) {
-            $("#back-top").fadeIn(450)
+            $("#back-top").fadeIn(250)
         } else {
-            $("#back-top").fadeOut(450)
+            $("#back-top").fadeOut(250)
         }
     });
     $("#back-top").click(function() {
         $("html, body").stop().animate({
             scrollTop: 0
-        }, 1200, "easeInOutExpo")
+        }, 200, "easeInOutExpo")
     });
     $("[rel='tooltip']").tooltip();
     $(".tip-top").tooltip({
@@ -241,16 +241,16 @@ $(document).ready(function() {
     })
 });
 $(".nav-toggle").hover(function() {
-    $(this).find(".dropdown-menu").first().stop(true, true).fadeIn(650)
+    $(this).find(".dropdown-menu").first().stop(true, true).fadeIn(250)
 }, function() {
-    $(this).find(".dropdown-menu").first().stop(true, true).fadeOut(650)
+    $(this).find(".dropdown-menu").first().stop(true, true).fadeOut(250)
 });
 $(".scroll").bind("click", function(e) {
     var t = $(this);
     var n = $("#navigation, #navigation-sticky").outerHeight();
     $("html, body").stop().animate({
         scrollTop: $(t.attr("href")).offset().top - n + "px"
-    }, 1200, "easeInOutExpo");
+    }, 300, "easeInOutExpo");
     e.preventDefault()
 });
 if ($(".headerWrapper").length) {
@@ -552,17 +552,17 @@ $(window).load(function() {
     $(".grid-item-on-hover").hover(function() {
         $(this).animate({
             opacity: .9
-        }, 400)
+        }, 200)
     }, function() {
         $(this).animate({
             opacity: 0
-        }, 400)
+        }, 200)
     })
 });
 $("a[rel^='prettyPhoto']").prettyPhoto({
     animation_speed: "normal",
     theme: "facebook",
-    slideshow: 4e3,
+    slideshow: 1e3,
     autoplay_slideshow: !1,
     deeplinking: false
 });
@@ -598,13 +598,13 @@ $(function() {
                 if (n) e.play();
                 else e.pause();
                 e.addEventListener("play", function(e) {
-                    $(i).fadeOut(300)
+                    $(i).fadeOut(200)
                 }, false);
                 e.addEventListener("pause", function(e) {
-                    $(i).fadeIn(600)
+                    $(i).fadeIn(200)
                 }, false);
                 e.addEventListener("ended", function(e) {
-                    $(i).fadeIn(300)
+                    $(i).fadeIn(200)
                 }, false)
             }
         };
@@ -629,7 +629,7 @@ $(function() {
     $(".counters-item").appear(function() {
         $(".counters-item [data-to]").each(function() {
             var e = $(this).attr("data-to");
-            $(this).delay(1e3).countTo({
+            $(this).delay(6e3).countTo({
                 from: 0,
                 to: e,
                 speed: 3e3,
@@ -762,7 +762,7 @@ $(window).load(function() {
     e.isotope({
         animationEngine: "best-available",
         animationOptions: {
-            duration: 200,
+            duration: 100,
             queue: false
         },
         layoutMode: "fitRows"
@@ -771,7 +771,7 @@ $(window).load(function() {
     t.isotope({
         animationEngine: "best-available",
         animationOptions: {
-            duration: 200,
+            duration: 100,
             queue: false
         },
         layoutMode: "fitRows"
@@ -837,7 +837,7 @@ $(window).load(function() {
                 var e = $(this).find(".open-project").attr("href") + " .item-data";
                 $("#project-page-data").animate({
                     opacity: 0
-                }, 400, function() {
+                }, 100, function() {
                     $("#project-page-data").load(e, function(e) {
                         var t = $(".helper");
                         var n = t.height();
@@ -846,25 +846,25 @@ $(window).load(function() {
                             height: ""
                         })
                     });
-                    $("#project-page-data").delay(200).animate({
+                    $("#project-page-data").delay(100).animate({
                         opacity: 1
-                    }, 400)
+                    },100)
                 });
                 $("html, body").animate({
                     scrollTop: $(".portfolio-bottom").offset().top - 40
-                }, 900);
+                }, 200);
                 $("#project-page-holder").slideUp(600, function() {
                     $("#project-page-data").css("visibility", "visible")
-                }).delay(700).slideDown(1e3, function() {
+                }).delay(1100).slideDown(1e3, function() {
                     $("#project-page-data").fadeIn("slow", function() {
                         initBxModal()
                     });
                     $(".element_fade_in").each(function() {
                         $(this).appear(function() {
-                            $(this).delay(50).animate({
+                            $(this).delay(100).animate({
                                 opacity: 1,
                                 right: "0px"
-                            }, 1e3)
+                            }, 0e3)
                         })
                     })
                 })
@@ -874,12 +874,12 @@ $(window).load(function() {
         $(document).on("click", "#project_close", function(e) {
             $("#project-page-data").animate({
                 opacity: 0
-            }, 400, function() {
-                $("#project-page-holder").delay(200).slideUp(400)
+            }, 100, function() {
+                $("#project-page-holder").delay(400).slideUp(400)
             });
-            $("html, body").delay(1e3).animate({
+            $("html, body").delay(0e3).animate({
                 scrollTop: $(".portfolio-top").offset().top - 70
-            }, 500);
+            },100);
             t.removeClass("active");
             return false
         })
