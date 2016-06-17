@@ -90,13 +90,13 @@ $(window).load(function() {
     $("html, body").stop().animate({
         scrollTop: 0
     }, 0, "easeInOutExpo")
-    $(".intro-loader").delay(0.5e3).fadeOut("fast");
-    $("#mask").delay(0.5e3).fadeOut("fast")
+    // $(".intro-loader").delay(0.5e3).fadeOut("fast");
+    // $("#mask").delay(0.5e3).fadeOut("fast")
 });
 $(document).ready(function() {
     $(".item_top").each(function() {
         $(this).appear(function() {
-            $(this).delay(200).animate({
+            $(this).delay(10).animate({
                 opacity: 1,
                 top: "0px"
             }, 0.5e3)
@@ -104,7 +104,7 @@ $(document).ready(function() {
     });
     $(".item_bottom").each(function() {
         $(this).appear(function() {
-            $(this).delay(200).animate({
+            $(this).delay(10).animate({
                 opacity: 1,
                 bottom: "0px"
             }, 0.5e3)
@@ -112,7 +112,7 @@ $(document).ready(function() {
     });
     $(".item_left").each(function() {
         $(this).appear(function() {
-            $(this).delay(200).animate({
+            $(this).delay(10).animate({
                 opacity: 1,
                 left: "0px"
             }, 0.5e3)
@@ -120,7 +120,7 @@ $(document).ready(function() {
     });
     $(".item_right").each(function() {
         $(this).appear(function() {
-            $(this).delay(200).animate({
+            $(this).delay(10).animate({
                 opacity: 1,
                 right: "0px"
             }, 0.5e3)
@@ -128,9 +128,9 @@ $(document).ready(function() {
     });
     $(".item_fade_in").each(function() {
         $(this).appear(function() {
-            $(this).delay(500).animate({
+            $(this).delay(10).animate({
                 opacity: 1
-            }, 2500)
+            }, 500)
         })
     });
     if ($(".fullScreen").length) {
