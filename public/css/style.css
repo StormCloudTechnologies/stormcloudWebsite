@@ -28,3 +28,10 @@
 		width: 250px !important;
 	}
 }
+
+/*.div-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute !important;
+    top: 20% !important;
+}*/
