@@ -18,7 +18,7 @@
     $(".js_rotating").Morphext({
 	    animation: "fadeIn",
 	    separator: ",",
-	    speed: 1500,
+	    speed: 3500,
 	    complete: function () {
 	    }
 	});
@@ -53,7 +53,7 @@
     //when you click the scroll to top button, go to the top of the page
     $(".scroll_to_top").on("click", function(e){
 		e.preventDefault();
-		$("html, body").animate({scrollTop:0}, 500);
+		$("html, body").animate({scrollTop:0}, 2000);
     });
 
     //init functions
@@ -277,7 +277,7 @@
 
 		var section = $(this).attr("data-section-id");
 
-		$('html, body').animate({scrollTop:$('#' + section).offset().top-50}, 250);
+		$('html, body').animate({scrollTop:$('#' + section).offset().top-50}, 2000);
 		
 		return false;
 
@@ -395,7 +395,7 @@
 
 		    	$(this).find(".barinner").animate({
 				    width:percentage
-				}, 300);
+				}, 2000);
 				$(this).addClass("animated");
 		    }
 
@@ -407,8 +407,8 @@
 
 	    	if (!$(this).hasClass("animated")){
 				$(this).counterUp({
-					delay: 10,
-					time: 1000
+					delay:5,
+					time: 2000
 				});
 				$(this).addClass("animated");
 		    }
@@ -487,13 +487,13 @@
 		if (box.hasClass("hidden")){
 			box.animate({
 				"left" : "0"
-			}, 200);
+			}, 2000);
 			box.removeClass("hidden");
 			$(this).removeClass("fa-angle-right").addClass("fa-angle-left");
 		}else{
 			box.animate({
 				"left" : "-158px"
-			}, 200);
+			}, 2000);
 			box.addClass("hidden");
 			$(this).removeClass("fa-angle-left").addClass("fa-angle-right");
 		}
