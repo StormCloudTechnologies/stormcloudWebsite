@@ -311,7 +311,7 @@ $(window).load(function() {
                 mode: "fade",
                 speed: 1e3,
                 auto: true,
-                pause: 1e3,
+                pause: 5e3,
                 pager: false,
                 video: true,
                 useCSS: false,
@@ -418,7 +418,7 @@ $(window).load(function() {
             }
             $(".bx-wrapper .bx-controls-direction a").css({
                 "margin-top": e / 1 + "px",
-                opacity: 1 - e / 10
+                opacity: 1 - e / 100
             });
             // $(".slide .caption").css({
             //     "margin-top": e / 1.5 + "px",
@@ -444,7 +444,7 @@ $(window).load(function() {
         if ($(".fullScreen").length) {
             $(".fullScreen .header").css({
                 top: 50 + e / 6 + "%",
-                opacity: 1 - e / 300
+                opacity: 1 - e / 600
             })
         }
         if ($(".scrollIcon").length) {
