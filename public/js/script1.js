@@ -104,7 +104,7 @@ $(document).ready(function() {
         $(this).appear(function() {
             $(this).delay(0).animate({
                 opacity: 1,
-                bottom: "0px"
+                bottom: "10px"
             }, 0, "easeInOutExpo")
         })
     });
@@ -217,15 +217,15 @@ $(document).ready(function() {
     });
     $(window).scroll(function() {
         if ($(window).scrollTop() > 400) {
-            $("#back-top").fadeIn(250)
+            $("#back-top").fadeIn(550)
         } else {
-            $("#back-top").fadeOut(250)
+            $("#back-top").fadeOut(550)
         }
     });
     $("#back-top").click(function() {
         $("html, body").stop().animate({
             scrollTop: 0
-        }, 0, "easeInOutExpo")
+        }, 1e3, "easeInOutExpo")
     });
     $("[rel='tooltip']").tooltip();
     $(".tip-top").tooltip({
